@@ -8,7 +8,7 @@ import random
 VOWELS = {'a', 'e', 'i', 'o', 'u'}
 
 
-def main():
+def a():
   adjective = random.choice([
       'apple-eyed',
       'carbon-based',
@@ -45,7 +45,12 @@ def main():
     article = 'a'
 
   # I am a(n) adjective noun.
-  print 'I am {0} {1} {2}.'.format(article, adjective, noun)
+  return 'I am {0} {1} {2}.'.format(article, adjective, noun)
+
+
+def main():
+  # I am a(n)...
+  print a()
 
 
 if __name__ == '__main__':
