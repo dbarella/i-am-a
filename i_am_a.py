@@ -9,8 +9,10 @@ VOWELS = {'a', 'e', 'i', 'o', 'u'}
 
 def main():
   adjective = random.choice([
+      'apple-eyed',
       'carbon-based',
       'cheery-eyed',
+      'earl-grey',
       'flubbery',
       'kitten-sitting',
       'large',
@@ -25,12 +27,12 @@ def main():
       'cat',
       'dog',
       'dollhouse',
+      'grapefruit',
       'kitten',
       'muncher',
       'syrup',
       'tail-dragger',
       'yodeler',
-      'grapefruit',
       ])
 
   if adjective[0] in VOWELS:  # If the first letter of the adj. is a vowel, 'an'
