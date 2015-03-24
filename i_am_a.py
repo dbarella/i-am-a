@@ -16,6 +16,7 @@ def main():
       'flubbery',
       'kitten-sitting',
       'large',
+      'lexicographic',
       'medium-sized',
       'small',
       'soury-eyed',
