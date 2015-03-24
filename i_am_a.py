@@ -25,15 +25,17 @@ def main():
 
   noun = random.choice([
       'aviary',
+      'bar of chocolate',
       'cat',
+      'diamond',
       'dog',
       'dollhouse',
       'grapefruit',
       'kitten',
       'muncher',
+      'octopus',
       'syrup',
       'tail-dragger',
-      'yodeler',
       ])
 
   if adjective[0] in VOWELS:  # If the first letter of the adj. is a vowel, 'an'
