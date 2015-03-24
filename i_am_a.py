@@ -21,7 +21,7 @@ def main():
       'medium-sized',
       'small',
       'soury-eyed',
-      'yttrium-biased',
+      'yttrium-based',
       ])
 
   noun = random.choice([
