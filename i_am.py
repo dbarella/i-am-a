@@ -5,7 +5,7 @@
 import random
 
 
-VOWELS = {'a', 'e', 'i', 'o', 'u'}
+VOWELS = ('a', 'e', 'i', 'o', 'u')
 
 
 def a():
@@ -39,7 +39,7 @@ def a():
       'tail-dragger',
       ])
 
-  if adjective[0] in VOWELS:  # If the first letter of the adj. is a vowel, 'an'
+  if adjective.startswith(VOWELS):
     article = 'an'
   else:
     article = 'a'
