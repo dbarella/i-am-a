@@ -9,57 +9,62 @@ import sys
 VOWELS = ('a', 'e', 'i', 'o', 'u')
 
 
-def a():
-  adjective = random.choice([
-      'alphabetical',
-      'apple-eyed',
-      'carbon-based',
-      'cheery-eyed',
-      'couch-like',
-      'earl-grey',
-      'flubbery',
-      'inconvenient',
-      'kitten-sitting',
-      'kitten-sniffing',
-      'large',
-      'lexicographic',
-      'medium-large',
-      'medium-sized',
-      'poorly-organized',
-      'small',
-      'soury-eyed',
-      'yammering',
-      'yttrium-based',
-      ])
+ADJECTIVES = [
+    'alphabetical',
+    'apple-eyed',
+    'carbon-based',
+    'cheery-eyed',
+    'couch-like',
+    'earl-grey',
+    'flubbery',
+    'inconvenient',
+    'kitten-sitting',
+    'kitten-sniffing',
+    'large',
+    'lexicographic',
+    'medium-large',
+    'medium-sized',
+    'poorly-organized',
+    'small',
+    'soury-eyed',
+    'yammering',
+    'yttrium-based',
+    ]
 
-  noun = random.choice([
-      'aviary',
-      'bar of chocolate',
-      'blade of grass',
-      'cat',
-      'chocolate-eater',
-      'couch-sitter',
-      'dog',
-      'dollhouse',
-      'fridge-opener',
-      'grapefruit',
-      'kitten',
-      'kitten-sitter',
-      'kitten-stealer',
-      'kitten-thief',
-      'muncher',
-      'octopus',
-      'pupster',
-      'rabble-rouser',
-      'ruffian',
-      'smolderer',
-      'street-walker',
-      'sub-woofer',
-      'syrup',
-      'tail-dragger',
-      'thief',
-      'woofer',
-      ])
+
+NOUNS = [
+    'aviary',
+    'bar of chocolate',
+    'blade of grass',
+    'cat',
+    'chocolate-eater',
+    'couch-sitter',
+    'dog',
+    'dollhouse',
+    'fridge-opener',
+    'grapefruit',
+    'kitten',
+    'kitten-sitter',
+    'kitten-stealer',
+    'kitten-thief',
+    'muncher',
+    'octopus',
+    'pupster',
+    'rabble-rouser',
+    'ruffian',
+    'smolderer',
+    'street-walker',
+    'sub-woofer',
+    'syrup',
+    'tail-dragger',
+    'thief',
+    'woofer',
+    ]
+
+
+def a():
+  adjective = random.choice(ADJECTIVES)
+  noun = random.choice(NOUNS)
 
   if adjective.startswith(VOWELS):
     article = 'an'
