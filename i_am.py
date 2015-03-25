@@ -3,6 +3,7 @@
 
 
 import random
+import sys
 
 
 VOWELS = ('a', 'e', 'i', 'o', 'u')
@@ -70,8 +71,14 @@ def a():
 
 
 def main():
-  # I am a(n)...
-  print a()
+  # I am a(n)... multiple times
+  if len(sys.argv) == 2 and sys.argv[1].isdigit():
+    for _ in range(int(sys.argv[1])):
+      print a()
+
+  else:
+    # I am a(n)...
+    print a()
 
 
 if __name__ == '__main__':
