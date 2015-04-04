@@ -37,6 +37,7 @@ NOUNS = [
     'bar of chocolate',
     'blade of grass',
     'cat',
+    'ceiling fan',
     'chocolate-eater',
     'couch-sitter',
     'dog',
