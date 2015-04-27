@@ -81,14 +81,16 @@ def a():
 
 
 def main():
+  i_am_a = a  # Functor for cuteness
+
   # I am a(n)... multiple times
   if len(sys.argv) == 2 and sys.argv[1].isdigit():
     for _ in range(int(sys.argv[1])):
-      print a()
+      print i_am_a()
 
-  else:
+  else:  # Otherwise just a single run
     # I am a(n)...
-    print a()
+    print i_am_a()
 
 
 if __name__ == '__main__':
