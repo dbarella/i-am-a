@@ -70,15 +70,28 @@ NOUNS = [
 def a():
   adjective = random.choice(ADJECTIVES)
   noun = random.choice(NOUNS)
-
-  if adjective.startswith(VOWELS):
-    article = 'an'
-  else:
-    article = 'a'
+  article = indefinite_article_for(adjective)
 
   # I am a(n) adjective noun.
   return 'I am {0} {1} {2}.'.format(article, adjective, noun)
 
+def indefinite_article_for(word):
+  if word.startswith(VOWELS):
+    return 'an'
+  elif word.startswith('y'):
+    # Good old 'sometimes y'...
+
+    if len(word) == 1:
+      raise ValueError("'y' is not a word in English, what are you doing?")
+
+    if word[1] in VOWELS:
+      # If 'y' is being followed by a vowel, assume it's acting as a consonant (e.g. 'a yellow hat').
+      return 'a'
+    else:
+      # If 'y' is being followed by a consonant, assume it's acting as a vowel (e.g. 'an yttrium-based life-form').
+      return 'an'
+  else:
+    return 'a'
 
 def main():
   i_am_a = a  # Functor for cuteness
